@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PidoFácil - Menú Digital para Restaurantes</title>
+
+  <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Momo+Trust+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/duotone/style.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="page-home">
+
+  <!-- HERO SECTION -->
+  <section class="hero-gradient hero-main">
+    <div class="container">
+
+      <div class="nav-wrapper">
+        <header class="capsule-navbar">
+          <a href="index.html" class="brand-logo" aria-label="PidoFácil, ir al inicio">
+            <span class="brand-icon"><img src="img/logo.svg" alt="PidoFácil"></span>
+          </a>
+
+          <nav class="nav-links" aria-label="Navegación principal">
+            <a href="index.html" class="nav-link active" aria-current="page">Inicio</a>
+            <a href="index.html#beneficios" class="nav-link">Beneficios</a>
+            <a href="ejemplos.html" class="nav-link">Ejemplos</a>
+            <a href="precios.html" class="nav-link">Precios</a>
+          </nav>
+
+          <div class="nav-cta-desktop">
+            <a href="contacto.html" class="btn btn-primary btn-sm">Contáctanos</a>
+          </div>
+
+          <button id="mobile-toggle" class="mobile-toggle" type="button" aria-label="Abrir menú"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <i class="ph-duotone ph-list" aria-hidden="true"></i>
+          </button>
+        </header>
+
+        <nav id="mobile-menu" class="mobile-menu capsule-navbar" aria-label="Navegación móvil" hidden>
+          <a href="index.html" class="text-primary" aria-current="page">Inicio</a>
+          <a href="index.html#beneficios">Beneficios</a>
+          <a href="ejemplos.html">Ejemplos</a>
+          <a href="precios.html">Precios</a>
+          <a href="contacto.html" class="btn btn-primary btn-sm">Contáctanos</a>
+        </nav>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-content" data-reveal>
+          <h1>Moderniza tu restaurante con un <span class="text-primary">Menú Digital</span></h1>
+          <p class="hero-description">
+            Mejora la experiencia de tus clientes con un menú digital personalizado que les permite consultar tu carta y
+            enviar pedidos por WhatsApp desde su celular.
+          </p>
+          <div class="hero-buttons">
+            <a href="contacto.html" class="btn btn-primary">Solicitar mi menú digital</a>
+            <a href="ejemplos.html" class="btn btn-secondary">Ver ejemplos</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper" data-reveal data-delay="120">
+          <img src="img/img-hero.png" alt="Mano sujetando celular con Menú Digital" class="hero-img">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <main>
+    <!-- PRIMERA SECCIÓN -->
+    <section class="section-padding bg-white">
+      <div class="container">
+        <div class="benefits-grid">
+          <div class="benefits-image-wrapper" data-reveal style="--reveal-delay: 100ms;">
+            <img src="img/tipos-cartas.png" alt="Tipos de cartas digitales" class="benefits-image">
+          </div>
+          <div>
+            <h2 class="font-display benefits-title">
+              Un menú digital <span class="text-primary">hace mucho más</span> que reemplazar un PDF
+            </h2>
+            <p class="benefits-desc">
+              Consulta la carta de forma práctica, reduce las preguntas frecuentes y ofrece a tus clientes una mejor
+              experiencia desde el celular.
+            </p>
+
+            <div class="cards-2col">
+              <div class="card-benefit peach" data-reveal>
+                <div class="card-icon"><i class="ph-duotone ph-bag" aria-hidden="true"></i></div>
+                <h3 class="card-title">Una mejor experiencia</h3>
+                <p class="card-desc">Explora los platos y sus precios desde el celular, sin depender de una carta
+                  impresa.</p>
+              </div>
+
+              <div class="card-benefit blue" data-reveal>
+                <div class="card-icon"><i class="ph-duotone ph-clock" aria-hidden="true"></i></div>
+                <h3 class="card-title">Menos tiempo en consultas</h3>
+                <p class="card-desc">Encuentra productos y precios en línea sin tener que preguntar por cada detalle.
+                </p>
+              </div>
+
+              <div class="card-benefit blue" data-reveal>
+                <div class="card-icon"><i class="ph-duotone ph-arrows-clockwise" aria-hidden="true"></i></div>
+                <h3 class="card-title">Una carta más flexible</h3>
+                <p class="card-desc">Permite actualizar los detalles de tu menú sin tener que crear y compartir un nuevo
+                  PDF cada vez.</p>
+              </div>
+
+              <div class="card-benefit peach" data-reveal>
+                <div class="card-icon"><i class="ph-duotone ph-device-mobile" aria-hidden="true"></i></div>
+                <h3 class="card-title">Acceso desde cualquier lugar</h3>
+                <p class="card-desc">Consulta la carta digital desde tu celular, estés donde estés.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEGUNDA SECCIÓN DE BENEFICIOS  -->
+    <section id="beneficios" class="section-padding bg-gray">
+      <div class="container text-center">
+        <span class="section-badge">Beneficios</span>
+        <h2 class="section-title">
+          Todo lo que necesitas para <span class="text-primary">digitalizar tu carta</span> y facilitar tus pedidos
+        </h2>
+
+        <div class="features-grid">
+          <div class="feature-card" data-reveal>
+            <img src="img/beneficio-1.png" alt="Carta" class="feature-img">
+            <h3 class="card-title">Catálogo digital a tu medida</h3>
+            <p class="card-desc">Organiza platos, bebidas, categorías y precios en una carta adaptada a la identidad
+              visual de tu negocio.</p>
+          </div>
+
+          <div class="feature-card" data-reveal>
+            <img src="img/beneficio-2.png" alt="WhatsApp" class="feature-img">
+            <h3 class="card-title">Pedidos listos para enviar por WhatsApp</h3>
+            <p class="card-desc">Tus clientes seleccionan productos y cantidades. PidoFácil calcula el total y prepara
+              el pedido para enviarlo por WhatsApp.</p>
+          </div>
+
+          <div class="feature-card" data-reveal>
+            <img src="img/beneficio-3.png" alt="Atención" class="feature-img">
+            <h3 class="card-title">Una atención más organizada</h3>
+            <p class="card-desc">El pedido llega a WhatsApp con los productos y cantidades seleccionados, facilitando su
+              revisión y coordinación.</p>
+          </div>
+
+          <div class="feature-card" data-reveal>
+            <img src="img/beneficio-4.png" alt="Actualización" class="feature-img">
+            <h3 class="card-title">Actualiza tu carta cuando lo necesites</h3>
+            <p class="card-desc">Solicita cambios en platos, precios, categorías y promociones para mantener tu carta al
+              día.</p>
+          </div>
+
+          <div class="feature-card" data-reveal>
+            <img src="img/beneficio-5.png" alt="QR" class="feature-img">
+            <h3 class="card-title">Acceso mediante código QR</h3>
+            <p class="card-desc">Facilita el acceso a tu menú digital mediante un código QR que tus clientes pueden
+              escanear desde su celular.</p>
+          </div>
+
+          <div class="feature-card" data-reveal>
+            <img src="img/beneficio-6.png" alt="Pagos" class="feature-img">
+            <h3 class="card-title">Facilita los pagos por Yape o Plin</h3>
+            <p class="card-desc">Tus clientes pueden copiar el número de pago y enviar el comprobante por WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO TRABAJAMOS -->
+    <section class="section-padding bg-white">
+      <div class="container">
+        <h2 class="section-title-2 section-title-left">Cómo trabajamos</h2>
+        <div class="steps-wrapper">
+          <div>
+            <div class="step-item" data-reveal>
+              <div class="step-connector-line"></div>
+              <div class="step-node"><i class="ph-duotone ph-file-text" aria-hidden="true"></i></div>
+              <div>
+                <h3 class="card-title card-title-lg">Nos compartes la información de tu negocio</h3>
+                <p class="card-desc step-content-desc">Reunimos tus platos, precios, fotografías, categorías, datos de
+                  contacto y demás información necesaria para preparar tu carta.</p>
+              </div>
+            </div>
+
+            <div class="step-item" data-reveal>
+              <div class="step-connector-line"></div>
+              <div class="step-node"><i class="ph-duotone ph-palette" aria-hidden="true"></i></div>
+              <div>
+                <h3 class="card-title card-title-lg">Diseñamos y configuramos tu menú</h3>
+                <p class="card-desc step-content-desc">Adaptamos la presentación a la identidad visual de tu negocio y
+                  configuramos las funcionalidades para consultar productos y enviar pedidos por WhatsApp.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item" data-reveal>
+              <div class="step-node"><i class="ph-duotone ph-rocket-launch" aria-hidden="true"></i></div>
+              <div>
+                <h3 class="card-title card-title-lg">Publicamos tu carta y empiezas a compartirla</h3>
+                <p class="card-desc step-content-desc">Una vez revisada y aprobada, tu carta queda disponible en línea
+                  para que puedas compartir el enlace o el código QR con tus clientes.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="img/proceso-trabajo.png" alt="Proceso de trabajo" class="rounded-shadow-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIPOS DE NEGOCIO -->
+    <section class="section-padding bg-peach-light">
+      <div class="container text-center">
+        <h2 class="section-title">PidoFácil se adapta a distintos tipos de negocio gastronómico</h2>
+        <div class="business-grid">
+          <div class="business-item" data-reveal>
+            <img src="img/negocio_criollo.png" alt="Criollos" class="business-avatar">
+            <span class="business-label">Criollos</span>
+          </div>
+          <div class="business-item" data-reveal>
+            <img src="img/negocio_chifa.jpg" alt="Chifas" class="business-avatar">
+            <span class="business-label">Chifas</span>
+          </div>
+          <div class="business-item" data-reveal>
+            <img src="img/negocio_polleria.png" alt="Pollerías" class="business-avatar">
+            <span class="business-label">Pollerías</span>
+          </div>
+          <div class="business-item" data-reveal>
+            <img src="img/negocio_cevicheria.png" alt="Cevicheras" class="business-avatar">
+            <span class="business-label">Cevicherías</span>
+          </div>
+          <div class="business-item" data-reveal>
+            <img src="img/negocio_cafeteria.jpeg" alt="Cafeterías" class="business-avatar">
+            <span class="business-label">Cafeterías</span>
+          </div>
+          <div class="business-item" data-reveal>
+            <img src="img/negocio_pizzeria.png" alt="Pizzerías" class="business-avatar">
+            <span class="business-label">Pizzerías</span>
+          </div>
+          <div class="business-item" data-reveal>
+            <img src="img/negocio_sangucheria.jpg" alt="Sangucherías" class="business-avatar">
+            <span class="business-label">Sangucherías</span>
+          </div>
+          <div class="business-item" data-reveal>
+            <img src="img/negocio_fuentedesoda.jpg" alt="Fuentes de Soda" class="business-avatar">
+            <span class="business-label">Fuentes de Soda</span>
+          </div>
+          <div class="business-item" data-reveal>
+            <img src="img/negocio_heladeria.jpeg" alt="Heladerías" class="business-avatar">
+            <span class="business-label">Heladerías</span>
+          </div>
+          <div class="business-item" data-reveal>
+            <img src="img/negocio_pasteleria.jpg" alt="Pastelerías" class="business-avatar">
+            <span class="business-label">Pastelerías</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="cta-section">
+      <div class="cta-card" data-reveal>
+        <h2 class="font-display" id="cta-title">Haz que pedir en tu restaurante sea más fácil</h2>
+        <p>Ofrece a tus clientes una forma más práctica de consultar tu carta y enviar sus pedidos.</p>
+        <a href="contacto.html" class="btn btn-orange btn-cta">Solicitar mi menú digital</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-bg-dark">
+    <div class="footer-card-container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <a class="brand-icon-f" href="index.html" aria-label="PidoFácil, ir al inicio">
+            <img src="img/logo-2.svg" alt="PidoFácil">
+          </a>
+          <p class="footer-desc">Menús digitales personalizados para negocios gastronómicos.</p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h2 class="footer-title">Navegación</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#beneficios">Beneficios</a></li>
+            <li><a href="ejemplos.html">Ejemplos</a></li>
+            <li><a href="precios.html">Precios</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h2 class="footer-title">Contacto</h2>
+          <ul class="footer-contact-list">
+            <li><i class="ph-duotone ph-envelope-simple" aria-hidden="true"></i><span
+                class="footer-selectable">contacto@pidofacil.com</span></li>
+            <li><i class="ph-duotone ph-phone" aria-hidden="true"></i><span class="footer-selectable">+51
+                999876543</span></li>
+          </ul>
+          <h2 class="footer-title footer-social-title">Síguenos</h2>
+          <div class="footer-socials" aria-label="Redes sociales">
+            <a href="#" class="social-icon-btn" aria-label="Facebook"
+              target="_blank" rel="noopener noreferrer"><i class="ph-duotone ph-facebook-logo"
+                aria-hidden="true"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="ph-duotone ph-instagram-logo"
+                aria-hidden="true"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="TikTok"><i class="ph-duotone ph-tiktok-logo"
+                aria-hidden="true"></i></a>
+            <a href="https://wa.me/51999876543" class="social-icon-btn" aria-label="WhatsApp" target="_blank"
+              rel="noopener noreferrer"><i class="ph-duotone ph-whatsapp-logo" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>

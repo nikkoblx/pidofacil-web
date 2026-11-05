@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Comunícate con PidoFácil para crear tu menú digital o resolver tus dudas.">
+  <title>Hablemos de tu negocio - PidoFácil</title>
+
+  <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Momo+Trust+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/duotone/style.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="page-contact">
+  <!-- Encabezado -->
+  <section class="hero-secondary contact-hero">
+    <div class="container">
+      <div class="nav-wrapper">
+        <header class="capsule-navbar">
+          <a href="index.html" class="brand-logo" aria-label="PidoFácil, ir al inicio">
+            <span class="brand-icon"><img src="img/logo.svg" alt="PidoFácil"></span>
+          </a>
+
+          <nav class="nav-links" aria-label="Navegación principal">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="index.html#beneficios" class="nav-link">Beneficios</a>
+            <a href="ejemplos.html" class="nav-link">Ejemplos</a>
+            <a href="precios.html" class="nav-link">Precios</a>
+          </nav>
+
+          <div class="nav-cta-desktop">
+            <a href="contacto.html" class="btn btn-primary btn-sm">Contáctanos</a>
+          </div>
+
+          <button id="mobile-toggle" class="mobile-toggle" type="button" aria-label="Abrir menú"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <i class="ph-duotone ph-list" aria-hidden="true"></i>
+          </button>
+        </header>
+
+        <nav id="mobile-menu" class="mobile-menu capsule-navbar" aria-label="Navegación móvil" hidden>
+          <a href="index.html">Inicio</a>
+          <a href="index.html#beneficios">Beneficios</a>
+          <a href="ejemplos.html">Ejemplos</a>
+          <a href="precios.html">Precios</a>
+          <a href="contacto.html" class="btn btn-primary btn-sm">Contáctanos</a>
+        </nav>
+      </div>
+
+      <div class="max-w-header page-hero-content">
+        <h1 class="font-display cta-capsule-title">Hablemos de tu negocio</h1>
+        <p class="hero-description-2">¿Quieres crear tu menú digital o tienes alguna consulta sobre
+          PidoFácil?<br>Escríbenos y te ayudaremos.</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="contact-main">
+    <!-- Formulario de contacto -->
+    <section class="contact-form-section" aria-label="Formulario de contacto">
+      <div class="container">
+        <div class="contact-box" data-reveal>
+          <div class="contact-img-wrapper">
+            <img src="img/contacto-img.jpg" alt="Trabajador explicando los servicios del negocio" loading="eager">
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Nombre y apellido <span aria-hidden="true">*</span></label>
+                <input class="form-input" id="contact-name" name="nombre" type="text" placeholder="Ej. Patrick Jane"
+                  autocomplete="name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Correo <span aria-hidden="true">*</span></label>
+                <input class="form-input" id="contact-email" name="correo" type="email"
+                  placeholder="ejemplo@suemail.com" autocomplete="email" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="business-name">Nombre del negocio <span
+                    aria-hidden="true">*</span></label>
+                <input class="form-input" id="business-name" name="negocio" type="text" placeholder="Mi restaurante"
+                  autocomplete="organization" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-phone">Celular</label>
+                <input class="form-input" id="contact-phone" name="celular" type="tel" placeholder="(+51) 123 456 789"
+                  autocomplete="tel">
+              </div>
+            </div>
+
+            <div class="form-group form-message-group">
+              <label class="form-label" for="contact-message">Motivo de consulta <span
+                  aria-hidden="true">*</span></label>
+              <textarea class="form-textarea" id="contact-message" name="mensaje" rows="5"
+                placeholder="Escriba aquí su mensaje..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary contact-submit" aria-describedby="form-note">Enviar
+              consulta</button>
+            <p class="form-note" id="form-note" aria-live="polite">Al enviar, se abrirá tu aplicación de correo para
+              completar el envío.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="cta-card" data-reveal>
+        <h2 class="font-display" id="cta-title">¿Prefieres contactarnos por WhatsApp?</h2>
+        <p>Escríbenos para resolver tus dudas sobre nuestros planes.</p>
+        <a class="btn btn-orange btn-cta" href="https://wa.me/51999876543" target="_blank" rel="noopener noreferrer">
+          Contactar por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer-bg-dark">
+    <div class="footer-card-container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <a class="brand-icon-f" href="index.html" aria-label="PidoFácil, ir al inicio">
+            <img src="img/logo-2.svg" alt="PidoFácil">
+          </a>
+          <p class="footer-desc">Menús digitales personalizados para negocios gastronómicos.</p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h2 class="footer-title">Navegación</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#beneficios">Beneficios</a></li>
+            <li><a href="ejemplos.html">Ejemplos</a></li>
+            <li><a href="precios.html">Precios</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h2 class="footer-title">Contacto</h2>
+          <ul class="footer-contact-list">
+            <li><i class="ph-duotone ph-envelope-simple" aria-hidden="true"></i><span
+                class="footer-selectable">contacto@pidofacil.com</span></li>
+            <li><i class="ph-duotone ph-phone" aria-hidden="true"></i><span class="footer-selectable">+51
+                999876543</span></li>
+          </ul>
+          <h2 class="footer-title footer-social-title">Síguenos</h2>
+          <div class="footer-socials" aria-label="Redes sociales">
+            <a href="#" class="social-icon-btn" aria-label="Facebook"
+              target="_blank" rel="noopener noreferrer"><i class="ph-duotone ph-facebook-logo"
+                aria-hidden="true"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="ph-duotone ph-instagram-logo"
+                aria-hidden="true"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="TikTok"><i class="ph-duotone ph-tiktok-logo"
+                aria-hidden="true"></i></a>
+            <a href="https://wa.me/51999876543" class="social-icon-btn" aria-label="WhatsApp" target="_blank"
+              rel="noopener noreferrer"><i class="ph-duotone ph-whatsapp-logo" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
